@@ -1,0 +1,33 @@
+{
+  "name": "braintree-vault-node",
+  "version": "0.1.0",
+  "description": "Store credit cards in Braintree vault and process transactions later",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:avidas/braintree-vault-nodejs.git"
+  },
+  "keywords": [
+    "braintree",
+    "vault"
+  ],
+  "author": "Avi Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avidas/braintree-vault-nodejs/issues"
+  },
+  "homepage": "https://github.com/avidas/braintree-vault-nodejs",
+  "dependencies": {
+    "braintree": "^1.23.0",
+    "express": "~4.10.6",
+    "body-parser": "~1.10.1",
+    "cookie-parser": "~1.3.3",
+    "morgan": "~1.5.1",
+    "serve-favicon": "~2.2.0",
+    "debug": "~2.1.1",
+    "jade": "~1.8.2"
+  }
+}

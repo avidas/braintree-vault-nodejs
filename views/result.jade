@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    - var strResult = JSON.stringify(result.transaction, null, 3);
+    
+    div(class="container")
+        div(class="row")
+            if result.success
+                h1 Your transaction has been processed successfully!
+                br
+                h2 Braintree Vault Transaction Details
+                pre #{strResult}
+            else
+                h1. Your vault transaction has failed :(
+                #{result.message}
