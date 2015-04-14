@@ -12,6 +12,8 @@ block content
     script.
         braintree.setup("#{token}", "dropin", {
             container: "dropin",
-            singleUse: false,
-            enableShippingAddress: true
+            paypal: {
+                singleUse: false,
+                enableShippingAddress: true            
+            }
         });
